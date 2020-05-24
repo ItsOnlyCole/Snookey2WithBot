@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<snookey2WithBot>
+  <core>
+  </core>
+  <bot>
+    <username></username>
+    <password></password>
+    <customCommands>
+      <command>
+        <commandID></commandID>
+        <name></name>
+        <phrase></phrase>
+        <response></response>
+        <actionType></actionType>
+        <action></action>
+      </command>
+    </customCommands>
+  </bot>
+</snookey2WithBot>

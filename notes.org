@@ -1,0 +1,95 @@
+#+TITLE: Snookey2WithBotNotes
+
+* Pecking Order of To-Do
+- [ ] Generate Link to Access Code
+- [ ] Parse Access Code from URL
+- [ ] Generate Stream Information
+- [ ] Error Handling For Command Line
+- [ ] Restrict to selected SubReddits
+- [ ] OBS-Websockets Support
+- [ ] Discord Rich Presence
+- [ ] Help arg
+- [ ] Chat Arg
+- [ ] Restart Stream Command
+- [ ] Migrate Settings to sqlite
+
+* Core.py
+** Functions
+- [ ] firstTimeInit
+  If not setup, runs setup to get
+  - Public API Key?
+  - Bot Use
+    - bot username (Optional)
+    - Bot Password (Optional)
+  - Discord Rich Presence (Optional)
+  - Obs Websockets Connection (Optional)
+    Info as well for
+    - Auto Open or not
+    - Profile
+    - Scene Collection
+- [ ] IntroFunction
+- [ ] HelpFunction
+- [ ] startStreamFunction
+    - [ ] Generate Stream Key
+    - [ ] generate Stream Link
+- [ ] parseAccessToken (For Start Stream)
+- [ ] UpdateOBSStreamKey
+- [ ] StreamCommandsFunction
+  Listen for ongoing commands after stream has started
+- [ ] View Chat
+- [ ] Restart Stream Function
+* Settings.xml
+Description: An xml file saving preferences of the user
+** Core
+*** Public API
+*** Discord Rich Presence Perference
+*** OBS-WebSockets Preference
+*** Subreddit List
+*** Discord Support
+** Bot
+*** Bot Username
+*** Bot Password
+*** Custom Commands
+**** CommandName
+***** Key Phrase
+***** Response
+***** Action
+*** Chat Log (Either Txt or SQL)
+*** Gold Log (Probs SQL)
+*** UserBlacklist
+** Gui
+*** /shrug/
+* Bot.py
+Description: A chat bot that loads into the stream
+and listens to chat for Awards/Chat Commands
+** Functions
+- [ ] ScheduleResponse
+- [ ] Responsed
+- [ ] Listen
+- [ ] Log
+* Gui.py
+Description: A gui for the program
+** Tabs (Tabs on the UI)
+*** Main (Start Stream)
+*** Bot
+**** Bot Commands
+**** Last Award
+**** Follower (If Reddit implements into the API)
+**** UserBlacklist
+Blacklist from responding to commands from specified users
+**** Activate or Nah Slider
+*** Chat
+**** Displays active chat
+*** Settings
+**** Obs-Studio
+***** Obs-Websockets
+***** Obs Profile
+***** Obs SceneCollection
+**** Bot
+***** Username
+***** Password
+***** AutoJoin
+**** Discord
+***** Rich Presence Preference
+**** API (Maybe)
+***** API Key
