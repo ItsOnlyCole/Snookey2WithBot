@@ -1,7 +1,7 @@
 #+TITLE: Snookey2WithBotNotes
 
 * Pecking Order of To-Do
-- [ ] Generate Link to Access Code
+- [X] Generate Link to Access Code
 - [ ] Parse Access Code from URL
 - [ ] Generate Stream Information
 - [ ] Error Handling For Command Line
@@ -38,6 +38,14 @@
   Listen for ongoing commands after stream has started
 - [ ] View Chat
 - [ ] Restart Stream Function
+** Variables
+- command (stream, chat, help, etc)
+- subreddit
+- streamName
+- apiPublicKey (Static)
+- tokenURL
+- parsedToken
+- fullToken
 * Settings.xml
 Description: An xml file saving preferences of the user
 ** Core
